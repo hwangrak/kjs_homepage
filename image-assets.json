@@ -1,0 +1,863 @@
+{
+  "home-worker.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "home-worker-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "home-worker-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "home-worker.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "hero-about.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "hero-about-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "hero-about-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "hero-about.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "hero-business.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "hero-business-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "hero-business-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "hero-business.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "hero-projects.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "hero-projects-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "hero-projects-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "hero-projects.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "hero-safety.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "hero-safety-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "hero-safety-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "hero-safety.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "hero-certifications.webp": {
+    "width": 1672,
+    "height": 940,
+    "native_width": 1672,
+    "native_height": 940,
+    "variants": [
+      {
+        "file": "hero-certifications-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "hero-certifications-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "hero-certifications.webp",
+        "width": 1672,
+        "height": 940
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "hero-contact.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "hero-contact-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "hero-contact-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "hero-contact.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "about-building.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "about-building-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "about-building-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "about-building.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "safety-check.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "safety-check-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "safety-check-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "safety-check.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "business-power-hd.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "business-power-hd-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "business-power-hd-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "business-power-hd.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "business-remodeling-hd.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "business-remodeling-hd-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "business-remodeling-hd-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "business-remodeling-hd.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "business-maintenance-hd.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "business-maintenance-hd-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "business-maintenance-hd-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "business-maintenance-hd.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "business-industrial-hd.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "business-industrial-hd-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "business-industrial-hd-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "business-industrial-hd.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "business-solar-hd.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "business-solar-hd-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "business-solar-hd-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "business-solar-hd.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "electrical-facility.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "electrical-facility-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "electrical-facility-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "electrical-facility.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "electrical-wiring.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "electrical-wiring-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "electrical-wiring-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "electrical-wiring.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "electrical-trays.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "electrical-trays-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "electrical-trays-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "electrical-trays.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "project-office-reference.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "project-office-reference-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "project-office-reference-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "project-office-reference.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "project-corridor-reference.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "project-corridor-reference-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "project-corridor-reference-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "project-corridor-reference.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "project-public-reference.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "project-public-reference-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "project-public-reference-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "project-public-reference.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "project-factory-reference.webp": {
+    "width": 1672,
+    "height": 941,
+    "native_width": 1672,
+    "native_height": 941,
+    "variants": [
+      {
+        "file": "project-factory-reference-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "file": "project-factory-reference-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "project-factory-reference.webp",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "source_url": null,
+    "author": null,
+    "license": "User-provided reference, edited for requested website"
+  },
+  "hero-home.webp": {
+    "width": 4887,
+    "height": 3257,
+    "native_width": 4887,
+    "native_height": 3257,
+    "variants": [
+      {
+        "file": "hero-home-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "hero-home-1280.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "file": "hero-home-1920.webp",
+        "width": 1920,
+        "height": 1280
+      },
+      {
+        "file": "hero-home-3840.webp",
+        "width": 3840,
+        "height": 2559
+      },
+      {
+        "file": "hero-home.webp",
+        "width": 4887,
+        "height": 3257
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/sunlit-skyline-of-busan-with-bridge-view-30907125/",
+    "author": "Nezaket",
+    "license": "Pexels License (free commercial use; attribution optional)"
+  },
+  "business-residential-hd.webp": {
+    "width": 3840,
+    "height": 2563,
+    "native_width": 6016,
+    "native_height": 4016,
+    "variants": [
+      {
+        "file": "business-residential-hd-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "business-residential-hd-1280.webp",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "file": "business-residential-hd-1920.webp",
+        "width": 1920,
+        "height": 1282
+      },
+      {
+        "file": "business-residential-hd.webp",
+        "width": 3840,
+        "height": 2563
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/living-room-area-2988860/",
+    "author": "Terry Magallanes",
+    "license": "Pexels License — attribution optional; commercial use permitted"
+  },
+  "project-stock-toll-plaza.webp": {
+    "width": 3840,
+    "height": 2880,
+    "native_width": 4032,
+    "native_height": 3024,
+    "variants": [
+      {
+        "file": "project-stock-toll-plaza-640.webp",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "file": "project-stock-toll-plaza-1280.webp",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "file": "project-stock-toll-plaza-1920.webp",
+        "width": 1920,
+        "height": 1440
+      },
+      {
+        "file": "project-stock-toll-plaza.webp",
+        "width": 3840,
+        "height": 2880
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/serene-highway-drive-through-south-korean-mountains-36866536/",
+    "author": "Sherine",
+    "license": "Pexels License; attribution optional"
+  },
+  "project-stock-wastewater.webp": {
+    "width": 3840,
+    "height": 2562,
+    "native_width": 5275,
+    "native_height": 3519,
+    "variants": [
+      {
+        "file": "project-stock-wastewater-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "project-stock-wastewater-1280.webp",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "file": "project-stock-wastewater-1920.webp",
+        "width": 1920,
+        "height": 1281
+      },
+      {
+        "file": "project-stock-wastewater.webp",
+        "width": 3840,
+        "height": 2562
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/aerial-view-of-silos-12975468/",
+    "author": "Tom Fisk",
+    "license": "Pexels License; attribution optional"
+  },
+  "project-gaya-reference.webp": {
+    "width": 3840,
+    "height": 2560,
+    "native_width": 7005,
+    "native_height": 4670,
+    "variants": [
+      {
+        "file": "project-gaya-reference-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "project-gaya-reference-1280.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "file": "project-gaya-reference-1920.webp",
+        "width": 1920,
+        "height": 1280
+      },
+      {
+        "file": "project-gaya-reference.webp",
+        "width": 3840,
+        "height": 2560
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/the-special-reading-room-at-the-asia-culture-center-in-gwangju-south-korea-14612127/",
+    "author": "Asia Culture Center",
+    "license": "Pexels License; attribution optional"
+  },
+  "project-stock-distribution-lines.webp": {
+    "width": 3840,
+    "height": 2560,
+    "native_width": 7728,
+    "native_height": 5152,
+    "variants": [
+      {
+        "file": "project-stock-distribution-lines-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "project-stock-distribution-lines-1280.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "file": "project-stock-distribution-lines-1920.webp",
+        "width": 1920,
+        "height": 1280
+      },
+      {
+        "file": "project-stock-distribution-lines.webp",
+        "width": 3840,
+        "height": 2560
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/gray-sky-over-a-wooden-utility-pole-14663527/",
+    "author": "Connor Scott McManus",
+    "license": "Pexels License; attribution optional"
+  },
+  "project-stock-tunnel.webp": {
+    "width": 3455,
+    "height": 5184,
+    "native_width": 3455,
+    "native_height": 5184,
+    "variants": [
+      {
+        "file": "project-stock-tunnel-640.webp",
+        "width": 640,
+        "height": 960
+      },
+      {
+        "file": "project-stock-tunnel-1280.webp",
+        "width": 1280,
+        "height": 1921
+      },
+      {
+        "file": "project-stock-tunnel-1920.webp",
+        "width": 1920,
+        "height": 2881
+      },
+      {
+        "file": "project-stock-tunnel.webp",
+        "width": 3455,
+        "height": 5184
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/lights-in-tunnel-15103180/",
+    "author": "Erick  Martinez-Velasco",
+    "license": "Pexels License; attribution optional"
+  },
+  "project-bumin-reference.webp": {
+    "width": 3840,
+    "height": 2560,
+    "native_width": 6240,
+    "native_height": 4160,
+    "variants": [
+      {
+        "file": "project-bumin-reference-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "project-bumin-reference-1280.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "file": "project-bumin-reference-1920.webp",
+        "width": 1920,
+        "height": 1280
+      },
+      {
+        "file": "project-bumin-reference.webp",
+        "width": 3840,
+        "height": 2560
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/illuminated-hospital-in-the-evening-in-usa-5548733/",
+    "author": "Martin Ferreira",
+    "license": "Pexels License; attribution optional"
+  },
+  "project-stock-transmission-lines.webp": {
+    "width": 3840,
+    "height": 2561,
+    "native_width": 5066,
+    "native_height": 3379,
+    "variants": [
+      {
+        "file": "project-stock-transmission-lines-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "project-stock-transmission-lines-1280.webp",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "file": "project-stock-transmission-lines-1920.webp",
+        "width": 1920,
+        "height": 1281
+      },
+      {
+        "file": "project-stock-transmission-lines.webp",
+        "width": 3840,
+        "height": 2561
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/power-lines-against-scenic-sunset-in-desert-34553014/",
+    "author": "Rino Adamo",
+    "license": "Pexels License; attribution optional"
+  },
+  "project-highway-2013.webp": {
+    "width": 3840,
+    "height": 2560,
+    "native_width": 6000,
+    "native_height": 4000,
+    "variants": [
+      {
+        "file": "project-highway-2013-640.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "file": "project-highway-2013-1280.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "file": "project-highway-2013-1920.webp",
+        "width": 1920,
+        "height": 1280
+      },
+      {
+        "file": "project-highway-2013.webp",
+        "width": 3840,
+        "height": 2560
+      }
+    ],
+    "source_url": "https://www.pexels.com/photo/urban-highway-leading-to-seoul-s-skyline-32148707/",
+    "author": "Theodore Nguyen",
+    "license": "Pexels License; attribution optional"
+  }
+}
