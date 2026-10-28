@@ -2,6 +2,6 @@
   "name": "kjs-homepage",
   "private": true,
   "type": "module",
-  "scripts": {"build": "node build.mjs"},
+  "scripts": {"build": "node build-estimate-preview.mjs && node build.mjs"},
   "engines": {"node": ">=22"}
 }
