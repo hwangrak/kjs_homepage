@@ -48,7 +48,11 @@ const customerReviewData=JSON.parse(await readFile(new URL('./customer-reviews.j
 function customerReviews(){
  const reviews=customerReviewData.filter(r=>r.publish===true&&r.consent===true&&typeof r.quote==='string'&&r.quote.trim());
  if(!reviews.length)return '';
- return `<section class="customer-reviews section container">${sectionHead('CUSTOMER REVIEWS','공사를 맡겨주신 고객의 이야기')}<div class="review-grid">${reviews.map(r=>`<article class="review-card"><blockquote>${escapeHtml(r.quote)}</blockquote><p>${escapeHtml(r.region||'')} · ${escapeHtml(r.buildingType||'')}<br><strong>${escapeHtml(r.work||'')}</strong></p></article>`).join('')}</div></section>`;
+ return `<section class="customer-reviews section container">${sectionHead('CUSTOMER REVIEWS','공사를 맡겨주신 고객의 이야기')}<div class="review-grid">${reviews.map(r=>{
+  const place=[r.region,r.buildingType].filter(Boolean).map(escapeHtml).join(' · ');
+  const origin=[r.source&&escapeHtml(r.source)+' 후기',r.date&&escapeHtml(r.date)].filter(Boolean).join(' · ');
+  return `<article class="review-card"><blockquote>${escapeHtml(r.quote).replaceAll('\n','<br>')}</blockquote><p>${place?place+'<br>':''}<strong>${escapeHtml(r.work||'')}</strong>${origin?`<br><small>${origin}</small>`:''}</p></article>`;
+ }).join('')}</div></section>`;
 }
 
 const services=[
