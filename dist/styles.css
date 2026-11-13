@@ -474,3 +474,5 @@ body:has(.menu-toggle[aria-expanded="true"]) .contact-dock {
   .review-card,
   .consultation-steps li { break-inside: avoid; }
 }
+
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
