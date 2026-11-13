@@ -15,7 +15,31 @@ const dialog=document.getElementById('project-dialog');
 const projectData=document.getElementById('project-data');
 let lastProjectTrigger;
 if(dialog&&projectData){const projects=JSON.parse(projectData.textContent);document.querySelectorAll('[data-project]').forEach(trigger=>trigger.addEventListener('click',()=>{const p=projects[Number(trigger.dataset.project)];if(!p)return;lastProjectTrigger=trigger;const content=document.getElementById('project-detail');content.replaceChildren();const meta=document.createElement('p');meta.textContent=`${p.category} · ${p.year}${p.status?' · '+p.status:''}`;const title=document.createElement('h2');title.id='project-modal-title';title.textContent=p.title;content.append(meta,title);if(p.image&&p.imageKind==='actual'){const image=document.createElement('img');image.src='/assets/'+(p.imageFallback||p.image);if(p.imageSrcset){image.srcset=p.imageSrcset;image.sizes='(max-width:700px) calc(100vw - 86px), 574px';image.width=p.imageWidth;image.height=p.imageHeight;}image.decoding='async';if(p.imageWidth/p.imageHeight>2.8)image.style.objectFit='contain';image.alt=p.photoCaption||p.title+' 실제 시공 사진';image.className='modal-project-photo';const caption=document.createElement('p');caption.className='modal-photo-caption';caption.textContent=p.photoCaption||'실제 시공 사진';content.append(image,caption);}const dl=document.createElement('dl');const details=[['발주처',p.client],['공사금액',p.amount],['공사내용',p.scope]];if(p.displayAmountBasis)details.push(['금액 기준',p.displayAmountBasis]);if(p.period)details.push(['공사기간',p.period]);details.forEach(([label,value])=>{const row=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=value;row.append(dt,dd);dl.append(row);});content.append(dl);if(p.sourceUrl){const source=document.createElement('a');source.href=p.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';source.className='project-record-source';source.textContent='공개 실적 기록 보기 ↗';content.append(source);}const link=document.createElement('a');link.href='/contact/';link.className='button yellow';link.textContent='비슷한 공사 상담하기 →';content.append(link);dialog.setAttribute('aria-labelledby','project-modal-title');dialog.showModal();document.body.classList.add('body-dialog-open');}));dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});dialog.addEventListener('close',()=>{document.body.classList.remove('body-dialog-open');lastProjectTrigger?.focus();});}
+// 문의 접수 주소. Google Apps Script 웹 앱을 배포한 뒤 그 주소를 여기에 넣으면
+// 폼이 서버로 직접 접수됩니다. 비워 두면 기존처럼 메일 앱을 여는 방식으로 동작합니다.
+const INQUIRY_ENDPOINT='';
 const form=document.getElementById('contact-form');
-if(form){const status=document.getElementById('form-status');const compose=()=>{const d=new FormData(form);return {subject:`[KJS 홈페이지 문의] ${d.get('type')} / ${d.get('name')}`,body:`문의 분야: ${d.get('type')}\n이름: ${d.get('name')}\n연락처: ${d.get('phone')}\n이메일: ${d.get('email')||'미입력'}\n\n[문의내용]\n${d.get('message')}\n\n개인정보 수집 및 이용 동의: 동의`};};form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const c=compose();window.location.href=`mailto:info@kjs-elec.kr?subject=${encodeURIComponent(c.subject)}&body=${encodeURIComponent(c.body)}`;status.textContent='메일 앱에서 전송을 완료해 주세요. 메일 앱이 열리지 않으면 문의내용을 복사해 info@kjs-elec.kr으로 보내주세요.';});form.querySelector('.copy-inquiry').addEventListener('click',async()=>{if(!form.reportValidity())return;const c=compose(),text=c.subject+'\n\n'+c.body;try{await navigator.clipboard.writeText(text);status.textContent='문의내용을 복사했습니다. info@kjs-elec.kr으로 보내주세요.';}catch{const field=document.createElement('textarea');field.value=text;field.setAttribute('aria-label','복사할 문의내용');form.append(field);field.focus();field.select();status.textContent='자동 복사가 지원되지 않습니다. 아래 선택된 내용을 복사해 이메일로 보내주세요.';}});}
+if(form){const status=document.getElementById('form-status');const compose=()=>{const d=new FormData(form);return {subject:`[KJS 홈페이지 문의] ${d.get('type')} / ${d.get('name')}`,body:`문의 분야: ${d.get('type')}\n이름: ${d.get('name')}\n연락처: ${d.get('phone')}\n이메일: ${d.get('email')||'미입력'}\n\n[문의내용]\n${d.get('message')}\n\n개인정보 수집 및 이용 동의: 동의`};};const openMailApp=(c,message)=>{window.location.href=`mailto:info@kjs-elec.kr?subject=${encodeURIComponent(c.subject)}&body=${encodeURIComponent(c.body)}`;status.textContent=message;};
+form.addEventListener('submit',async e=>{
+ e.preventDefault();
+ if(!form.reportValidity())return;
+ if(form.querySelector('[name=company_website]')?.value)return;
+ const c=compose();
+ if(!INQUIRY_ENDPOINT){openMailApp(c,'메일 앱에서 전송을 완료해 주세요. 메일 앱이 열리지 않으면 문의내용을 복사해 info@kjs-elec.kr으로 보내주세요.');return;}
+ const submit=form.querySelector('button[type=submit]');
+ submit.disabled=true;
+ status.textContent='문의를 보내는 중입니다.';
+ try{
+  const d=new FormData(form);
+  const response=await fetch(INQUIRY_ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({name:d.get('name'),phone:d.get('phone'),email:d.get('email')||'',type:d.get('type'),message:d.get('message'),page:location.pathname})});
+  if(!response.ok)throw new Error('접수 실패: '+response.status);
+  form.reset();
+  status.textContent='문의가 접수되었습니다. 평일 09:00–18:00 상담시간에 순서대로 연락드리겠습니다.';
+ }catch{
+  openMailApp(c,'접수 중 문제가 생겼습니다. 메일 앱에서 전송을 완료해 주시거나 010-5096-3410으로 전화 주세요.');
+ }finally{
+  submit.disabled=false;
+ }
+});form.querySelector('.copy-inquiry').addEventListener('click',async()=>{if(!form.reportValidity())return;const c=compose(),text=c.subject+'\n\n'+c.body;try{await navigator.clipboard.writeText(text);status.textContent='문의내용을 복사했습니다. info@kjs-elec.kr으로 보내주세요.';}catch{const field=document.createElement('textarea');field.value=text;field.setAttribute('aria-label','복사할 문의내용');form.append(field);field.focus();field.select();status.textContent='자동 복사가 지원되지 않습니다. 아래 선택된 내용을 복사해 이메일로 보내주세요.';}});}
 
 if(form){form.querySelector('button[type="submit"]').disabled=false;}
