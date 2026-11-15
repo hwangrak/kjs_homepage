@@ -43,3 +43,20 @@ form.addEventListener('submit',async e=>{
 });form.querySelector('.copy-inquiry').addEventListener('click',async()=>{if(!form.reportValidity())return;const c=compose(),text=c.subject+'\n\n'+c.body;try{await navigator.clipboard.writeText(text);status.textContent='문의내용을 복사했습니다. info@kjs-elec.kr으로 보내주세요.';}catch{const field=document.createElement('textarea');field.value=text;field.setAttribute('aria-label','복사할 문의내용');form.append(field);field.focus();field.select();status.textContent='자동 복사가 지원되지 않습니다. 아래 선택된 내용을 복사해 이메일로 보내주세요.';}});}
 
 if(form){form.querySelector('button[type="submit"]').disabled=false;}
+
+// 긴 후기는 일곱 줄까지 접고, 넘칠 때만 더보기 버튼을 붙입니다.
+for(const quote of document.querySelectorAll('.review-quote')){
+ quote.classList.add('is-clamped');
+ if(quote.scrollHeight-quote.clientHeight<8){quote.classList.remove('is-clamped');continue;}
+ const toggle=document.createElement('button');
+ toggle.type='button';
+ toggle.className='review-more';
+ toggle.textContent='더보기';
+ toggle.setAttribute('aria-expanded','false');
+ toggle.addEventListener('click',()=>{
+  const open=quote.classList.toggle('is-clamped')===false;
+  toggle.textContent=open?'접기':'더보기';
+  toggle.setAttribute('aria-expanded',String(open));
+ });
+ quote.after(toggle);
+}
