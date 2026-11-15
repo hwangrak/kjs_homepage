@@ -476,3 +476,13 @@ body:has(.menu-toggle[aria-expanded="true"]) .contact-dock {
 }
 
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+.review-summary{margin:-8px 0 28px;color:var(--muted);font-size:14px;line-height:1.8}
+.review-summary .review-score{color:var(--ink);font-weight:700;font-size:16px;letter-spacing:.02em}
+.review-summary a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.review-stars{margin:0 0 12px;color:#f2b23e;font-size:14px;letter-spacing:.14em}
+.review-card{display:flex;flex-direction:column}
+.review-quote{position:relative;overflow:hidden}
+.review-quote.is-clamped{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;line-clamp:7}
+.review-more{align-self:flex-start;margin:-14px 0 20px;padding:0;border:0;background:none;color:var(--muted);font:inherit;font-size:13px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.review-more:hover{color:var(--ink)}
