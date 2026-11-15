@@ -55,7 +55,9 @@ function customerReviews(limit){
  return `<section class="customer-reviews section container" id="reviews">${sectionHead('CUSTOMER REVIEWS','공사를 맡겨주신 고객의 이야기')}<p class="review-summary"><span class="review-score">★ ${reviewSummary.average}</span> · 숨고 후기 ${reviewSummary.total}건 평균<br>고객 동의를 받은 ${all.length}건을 그대로 싣습니다. <a href="${reviewSummary.profileUrl}" target="_blank" rel="noopener nofollow">숨고에서 원문 보기</a></p><div class="review-grid">${reviews.map(r=>{
   const place=[r.region,r.buildingType].filter(Boolean).map(escapeHtml).join(' · ');
   const origin=[r.source&&escapeHtml(r.source)+' 후기',r.date&&escapeHtml(r.date)].filter(Boolean).join(' · ');
-  return `<article class="review-card">${stars(r.rating||5)}<blockquote class="review-quote">${escapeHtml(r.quote).replaceAll('\n','<br>')}</blockquote><p>${place?place+'<br>':''}<strong>${escapeHtml(r.work||'')}</strong>${origin?`<br><small>${origin}</small>`:''}</p></article>`;
+  const shot=(o,tag)=>`<figure><img src="${o.src}" alt="${escapeHtml(o.alt)}" loading="lazy" decoding="async" width="1200" height="900"><figcaption>${tag}</figcaption></figure>`;
+  const photos=Array.isArray(r.photos)&&r.photos.length?`<div class="review-photos">${r.photos.map(pair=>`<div class="review-pair"><p class="review-pair-label">${escapeHtml(pair.label)}</p><div class="review-pair-shots">${shot(pair.before,'시공 전')}${shot(pair.after,'시공 후')}</div></div>`).join('')}<p class="review-photos-note">고객이 직접 촬영해 숨고 후기에 올린 사진입니다. 게재 동의를 받았습니다.</p></div>`:'';
+  return `<article class="review-card${photos?' has-photos':''}">${stars(r.rating||5)}<blockquote class="review-quote">${escapeHtml(r.quote).replaceAll('\n','<br>')}</blockquote>${photos}<p>${place?place+'<br>':''}<strong>${escapeHtml(r.work||'')}</strong>${origin?`<br><small>${origin}</small>`:''}</p></article>`;
  }).join('')}</div>${more?`<div class="center"><a class="button outline" href="/contact/#reviews">후기 ${all.length}건 전체 보기 ${arrow()}</a></div>`:''}</section>`;
 }
 

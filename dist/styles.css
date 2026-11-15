@@ -486,3 +486,12 @@ body:has(.menu-toggle[aria-expanded="true"]) .contact-dock {
 .review-quote.is-clamped{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;line-clamp:7}
 .review-more{align-self:flex-start;margin:-14px 0 20px;padding:0;border:0;background:none;color:var(--muted);font:inherit;font-size:13px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .review-more:hover{color:var(--ink)}
+
+.review-photos{margin:4px 0 22px}
+.review-pair+.review-pair{margin-top:14px}
+.review-pair-label{margin:0 0 6px;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.review-pair-shots{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.review-pair-shots figure{margin:0}
+.review-pair-shots img{display:block;width:100%;height:150px;object-fit:cover;border-radius:6px;background:#eee}
+.review-pair-shots figcaption{margin-top:5px;color:var(--muted);font-size:12px;text-align:center}
+.review-photos-note{margin:12px 0 0;color:var(--muted);font-size:12px;line-height:1.7}
